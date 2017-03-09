@@ -1,8 +1,8 @@
-% prettyFig.m
+% llmFig.m
 % makes current figure prettier, and overrides MATLAB's horrible defaults. 
 % 
 % usage:
-% prettyFig; % will automatically make the current figure prettier
+% llmFig; % will automatically make the current figure prettier
 % 
 % you can tweak individual options if you like. for example:
 % prettyFig('lw',4) % set line width of axes to 4 
@@ -13,17 +13,19 @@
 % to get a structure with all the options
 % you can also pass this options structure back in:
 %
-% prettyFig(options)
+% llmFig(options)
 %
 % To see this help message, type:
-% help prettyFig
+% help llmFig
 %
 % part of mtools, which lives here:
-% https://github.com/sg-s/srinivas.gs_mtools
+% https://github.com/dsseara/mtools
 %
-% Edited by Daniel Seara to conform to LLM standards 03/08/2017
+% created by Srinivas Gorur-Shandilya. Contact me at http://srinivas.gs/contact/ (previously prettyFig.m)
+% 
+% edited by Daniel Seara to conform to LLM standards 03/08/2017
 
-function [varargout] = LLMfig(varargin)
+function [varargout] = llmFig(varargin)
 
 warning off
 
