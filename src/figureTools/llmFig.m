@@ -45,6 +45,7 @@ options.x_minor_ticks = true;
 options.y_minor_ticks = true;
 options.font_units = 'points';
 options.legend_box = false;
+options.axis_square = true;
 
 
 if nargout && ~nargin 
@@ -312,6 +313,8 @@ for i = 1:length(axesHandles)
 end
 
 % Make axis square
-axis square
+if options.axis_square
+    axis square
+end
 
 warning on
