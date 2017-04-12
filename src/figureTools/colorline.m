@@ -1,5 +1,6 @@
 function [] = colorline(x,y,col)
-% Creates a 2d line that varies it's color as it is plotted. Accepts column vectors
+% Creates a 2d line that varies it's color as it is plotted. 
+% Accepts column vectors
 %
 % INPUTS :  x,y - Nx1 vectors, same as plot(x,y)
 %           col - vector of same size as x and y that containing the data
@@ -13,10 +14,10 @@ if size(x,1)<size(x,2)
     x = [x]';
 end
 if size(y,1)<size(y,2)
-    x = [y]';
+    y = [y]';
 end
 if size(col,1)<size(col,2)
-    x = [col]';
+    col = [col]';
 end
 
 z = zeros(size(x));
